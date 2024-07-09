@@ -6,8 +6,7 @@
     
     </head>
     <body>
-      <h2>Você selecionou NOME_DA_FORMA_SELECIONADA</h2>
-      <!-- INCLUA AQUI DE FORMA DINÂMICA A IMAGEM SELECIONADA -->
-      
+      <h2>Você selecionou {{forma}}</h2>
+      <img src="{{ url_for('static', filename='imgs/' + forma + '.jpg') }}" alt="">
     </body>
   </html>

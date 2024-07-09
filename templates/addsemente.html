@@ -7,48 +7,49 @@
 
 	<h1>Cadastro de Sementes</h1>
 
-	<form action="" method="">
+	<form action="/savesemente" method="post">
 
 		<!-- Campo de texto -->
 		<label for="">Nome da Planta:</label>
-		<input type="text" name="" required>
+		<input type="text" name="name" required> <br>
 
 		<!-- Campo de número -->
 		<label for="">Quantidade de sementes:</label>
-		<input type="number" name="" min="1" max="100" required>
+		<input type="number" name="quantidade" min="1" max="100" required> <br>
 
 		<!-- Campo de seleção -->
 		<label for="">Tipo de Planta:</label>
-		<select id="" name="">
+		<select id="tipo" name="tipo">
 			<option value="">Selecione um tipo</option>
 			<option value="flores">Flor</option>
 			<option value="folhagens">Folhagem</option>
 			<option value="frutiferas">Frutífera</option>
 			<option value="ervas">Erva</option>
-		</select>
+		</select> <br>
 
 		<!-- Campo de texto grande -->
 		<label for="descricao">Descrição:</label>
-		<textarea name="" rows="5" cols="30"></textarea>
+		<textarea name="desc" rows="5" cols="30"></textarea> <br>
 
 		<!-- Botões de opção -->
-		<label for="">Prefere:</label>
-		<input type="radio" name="" value="" checked>
-		<label for="">Sol</label>
-		<input type="radio" name="" value="">
-		<label for="sombra">Sombra</label>
+		<label>Prefere:</label><br>
+        <input type="radio" id="sol" name="preferencia" value="sol" checked>
+        <label for="sol">Sol</label><br>
+        
+        <input type="radio" id="sombra" name="preferencia" value="sombra">
+        <label for="sombra">Sombra</label><br>
 
 		<!-- Caixa de seleção -->
 		<label>Cuidados:</label>
-		<select name="">
+		<select name="cuidados">
 			<option value="">Regas</option>
 			<option value="">Adubação</option>
 			<option value="">Podas</option>
 			<option value="">Controle de Pragas</option>
-		</select>
+		</select> <br>
 
 		<!-- Botão de envio -->
-		<input type="submit" value="Enviar">
+		<input type="submit" value="Enviar"> <br>
 	</form>
 
 </body>

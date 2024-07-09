@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registro de alergias</title>
+    <title>Registro de alergias</title>
 </head>
 <body>
-  <h2> Você informou que tem alergia a:</h2>
-  <p> <!-- APRESENTE AQUI AS ALERGIAS INFORMADAS --></p>
+    <h2> Você informou que tem alergia a:</h2>
+    <ul>
+        {% for alergia in alergias %} 
+        <li>{{ alergia }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
